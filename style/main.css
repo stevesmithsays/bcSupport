@@ -1,0 +1,348 @@
+html{
+  font-size: 16px;
+}
+body{
+  font-family: sans-serif;
+  background: white;
+  font-size:16px;
+}
+
+.site-header{
+  background: #EEF2F3; 
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-bottom: 1px solid #00000017;
+  width: 100%;
+  height: 105px;
+  top: 0;
+  right: 1px;
+  z-index: 3000;
+}
+
+.header-container{
+  /* background: #bce1ff93; */
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 78%;
+  height: 105px;
+}
+
+/* LOGO THANGS */
+
+.site-logo{
+  /* background: lightcoral; */
+  display: block;
+  position: relative;
+  width: 205px;
+  padding: 2px;
+  top: 20px;
+  height: 40px;
+  z-index:100;
+}
+.logo{
+  background: #659AA9;
+  /* background: #408ea3; */
+  display: inline-block;
+  position: relative;
+  margin: 2px;
+  width: 32px;
+  height: 21px;
+  -webkit-clip-path: polygon(36% 11%, 100% 11%, 66% 96%, 0 96%);
+  clip-path: polygon(36% 11%, 100% 11%, 66% 96%, 0 96%);
+}
+
+#logo-span{
+  /* background:lightgreen; */
+  font-weight: 400;
+  position: relative;
+  margin: 0px auto;
+  right: 9px;
+  bottom: 4px;
+  letter-spacing: -1.25px;
+  font-size: 1.55rem;
+  font-size: 1.65rem;
+}
+
+
+#sup-span{
+  background: #00000017;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fafafa00;
+  height: 2px;
+  top: -5px;
+  width: 144px;
+  left: 1px;
+  overflow:hidden;
+  text-align: center;
+  position: relative;
+  font-size: 12px;
+  transition: .3s ease all;  
+}
+
+.site-logo:hover #sup-span{
+  transition: .2s ease all;
+  background: #659AA9;
+  height: 25px;
+  color: black;
+}
+
+
+/* HEADER SPAN THANGS */
+.dream-come-true-span{
+  /* background: lightblue; */
+  color: #408ea3;
+  display: block;
+  position: relative;
+  width: 700px;
+  font-size: 16px;
+  top: 30px;
+  /* letter-spacing: .75px; */
+}
+
+/* NAV THANGS */
+
+.nav-container{
+  /* background: #ff6593; */
+  display: flex;
+  position: relative;
+  align-items: center;
+  /* left: 620px; */
+  float:right;
+  height: 50px;  
+  width:35%;
+  bottom: 6px;
+  left: 12px;
+}
+.site-nav ul{
+  /* background: #317ff5; */
+  display: flex;
+  height: 30px;
+  width: 85%;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.site-nav ul a{
+  /* background: lightgreen; */
+  color: black;
+  display: flex;
+  position: relative;
+  padding: 2px;
+  padding-right: 20px;
+  border-right: 2px solid #00000017;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  bottom: 20px;
+  transition: .1s ease all;
+}
+
+.site-nav ul a:hover{
+  transition: .1s ease all;
+  text-decoration: underline;
+}
+.first{
+  width: 75px;
+}
+
+.second{
+  position: relative;
+  letter-spacing: 2px;
+  width: 60px;
+  left: 10px;
+}
+
+/* DROPDOWN THANGS */
+
+.dropdown{
+  /* background: #62ffd86c; */
+  display: block;
+  position: relative;
+  margin: 2px 4px;
+  height: 8px;
+  width:70px;
+  top: 24px;
+  right: 24px;
+  /* right: 24px; */
+}
+
+.dropdown-content{
+  /* background:#41c8ee; */
+  color: #fafafa00;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0 4px;
+  bottom: 20px;
+  /* width: 50px;  */
+  height:4px; 
+  border: 1px solid #fafafa00;
+  transition: .1s ease all;
+  } 
+
+.dropdown:hover .dropdown-content{
+  transition: .1s ease all;
+  background: #EEF2F3;
+  position: relative;
+  color: #0000006e;
+  border: 1px solid #0000002c;
+  border-top: 1px solid #fafafa00;
+  box-shadow: -5px 5px 60px #0000001e;
+  padding: 22px;
+  bottom: 9px;
+  z-index: 3000;
+}
+
+
+.dropdown:hover .one{
+  height: 400px;
+  width: 500px;
+  right: 230px;
+}
+.dropdown:hover .two{
+  height: 400px;
+  width: 500px;
+  right: 290px;
+}
+/* MAIN THANGS */
+
+.main-row{
+  /* background: #d9eaf9; */
+  display: block;
+  text-align: left;
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  min-width: 450px;
+  height: 800px;
+  top: 90px;
+}
+
+.about{
+  display: inline-block;
+  position: relative;
+  width: 75%;
+  padding: 12px;
+  padding-top: 100px;
+  text-align: left;
+  height: 700px;
+  transition: .2s ease all;
+}
+.about:hover{
+  transition: .2s ease all;
+  background: #0f2333b0; 
+}
+.about h1{
+  background: #659aa923;
+  color: #00000021;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  padding: 8px;
+  width: 85%;
+  min-width: 325px;
+  font-weight: 800;
+  font-size: 8rem;
+  word-wrap: break-word;
+  text-align: center;
+  transition: .4s ease all;
+}
+
+.about:hover h1{
+  transition: 1.5s ease all;
+  background: #659AA9;
+  
+  color: black;
+}
+
+.about p{
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  /* margin-top: 50px; */
+  color:#000000bd;
+  border-radius: 2px;
+  font-weight: 100;
+  font-size: 1rem;
+  width: 85%;
+  line-height: 24px;
+  padding: 8px;
+  transition: .4s ease all;
+}
+
+.thrilled{
+  background: #659AA9;
+  color:#fafafa00;
+  display: inline-block;
+  text-align: center;
+  height: 1px;
+  width: 55px;
+  letter-spacing: -1px;
+  font-weight: 800;
+  transition: .2s ease all;
+}
+.thrilled:hover{
+  transition: .2s ease all;
+  color: #ffffff;
+  text-shadow: -2px 2px 1px #000000d2;
+  box-shadow: -2px 2px 1px #00000070;
+  height: 22px;
+}
+
+.contact{
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #fafafa;
+  padding: 4px 12px;
+  height: 30px;
+  width: 55px;
+  font-size: 1rem;
+  top: 35px;
+  color: #fafafa;
+  transition: .2s ease all;
+}
+.contact:hover{
+  transition: .2s ease all;
+  width: 85px;
+}
+
+.contact-me{
+  display: block;
+  position: relative;
+  top: 6px;
+  left: 2px;
+  font-size:1rem;
+}
+
+.me{
+  display: inline-block;
+  position: relative;
+  color: #ffffff00;
+  left:60px;
+  bottom: 12px;
+  transition: .2s ease all;
+}
+.contact:hover .me{
+  color: #fafafa;
+}
+
+/* FOOTER THANGS */
+.footer{
+  /* background: #497986; */
+  background: blue;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  height: 200px;
+}
+
+
+
+
+
