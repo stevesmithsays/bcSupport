@@ -5,12 +5,14 @@ html{
 }
 
 body{
-  font-family: sans-serif;
   background: white;
+  font-family: sans-serif;
   font-size:16px;
   margin: 0;
   padding: 0;
+  transition: .3s ease all;
 }
+
 header{
   display: block;
   width: 102%;
@@ -163,7 +165,7 @@ header{
   list-style: none;
 }
 
-.site-nav ul a{
+.nav-links{
   /* background: lightgreen; */
   color: black;
   display: flex;
@@ -173,13 +175,12 @@ header{
   font-weight: 600;
   font-size: 16px;
   text-decoration: none;
-  /* bottom: 20px; */
   top: 2px;
   right: 1px;
-  transition: .1s ease all;
+  transition: 1s ease all;
 }
 
-.site-nav ul a:hover{
+.nav-links:hover{
   transition: .1s ease all;
   text-decoration: underline;
 }
@@ -257,44 +258,52 @@ header{
   right: 140px;
 }
 .dropdown:hover .three{
-  /* transition: .4s ease all; */
-  height: 280px;
+  height: 290px;
   width: 120px;
   padding: 12px;
   right: 50px;
 }
 .contact-link{
-  background: #21659c62;
-  display: block;
+  /* background: #39aeb927; */
+  background: #0ec8e92f;
+  background:#f7f9fa;
+  color: #0000006c;
+  display: flex;
   position: relative;
-  margin: 0 auto;
-  padding: 4px;
-  height: 60px;
-  bottom: -20px;
-  left: -12px;
-  width: 145px;
+  text-decoration: none;
+  text-transform: capitalize;
   justify-content: center;
   align-items: center;
+  height: 60px;
+  width: 145px;
+  top: 20px;
+  right: 12px;
+  font-weight: 700;
+  letter-spacing: -1px;
   transition: .3s ease all;
 }
 .contact-link:hover{
   transition: .3s ease all;
-  text-decoration: none;
+  color:#ffffff;
+}
+
+.gemail:hover{
+  /* background: #2896b8; */
+  background: #3da072;
+}
+
+.phone:hover{
+  /* background: #2896b8; */
+  background: #fc652a;
 }
 
 .ghub:hover{
-  transition: .3s ease all;
-  background: #45b2d3;
+  background: #000000;
 }
+
 .linked:hover{
-  background: #317d94;
-}
-.gemail:hover{
-  background: #1c5263;
-}
-.phone:hover{
-  background: #14394b;
-  color: #fafafaad;
+  /* background: #497986; */
+  background: #2876b6;
 }
 
 /* MAIN THANGS */
@@ -323,7 +332,7 @@ header{
 }
 .about:hover{
   transition: .2s ease all;
-  background: #86dce01c; 
+  background: #659aa90e;
   border: 1px solid #0000002d;
   border-top: 0px;
 }
