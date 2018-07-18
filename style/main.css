@@ -3,10 +3,17 @@ html{
   margin: 0;
   padding: 0;
 }
+
 body{
   font-family: sans-serif;
   background: white;
   font-size:16px;
+  margin: 0;
+  padding: 0;
+}
+header{
+  display: block;
+  width: 102%;
   margin: 0;
   padding: 0;
 }
@@ -116,6 +123,12 @@ body{
     left: 160px;
     width: 190px;
   }
+  .dropdown:hover .dropdown-content{
+    display: block;
+    position: relative;
+    top: 6px;
+  }
+
 }
 
 /* NAV THANGS */
@@ -129,8 +142,13 @@ body{
   align-items: center;
   float:right;
   height: 50px;  
+  left: 40px;
   width: 400px;
-  bottom: 7px;
+  bottom: 12px;
+}
+.site-nav{
+  height: 90%;
+  width: 350px;
 }
 .site-nav ul{
   background: #EEF2F3;
@@ -140,7 +158,7 @@ body{
   align-items: flex-start;
   position: relative;
   height: 30px;
-  width: 400px;
+  width: 280px;
   left:25px;
   list-style: none;
 }
@@ -155,8 +173,9 @@ body{
   font-weight: 600;
   font-size: 16px;
   text-decoration: none;
-  bottom: 20px;
-  right: 20px;
+  /* bottom: 20px; */
+  top: 2px;
+  right: 1px;
   transition: .1s ease all;
 }
 
@@ -171,10 +190,13 @@ body{
 .second{
   position: relative;  
   width: 100px;
+  right: 10px;
+  /* background: black; */
 }
 .third{
   position:relative;
-  left: 22px;
+  width: 70px;
+  /* left: 5px; */
 }
 
 
@@ -182,55 +204,99 @@ body{
 /* DROPDOWN THANGS */
 
 .dropdown{
-  /* background: #62ffd86c; */
+  /* background: #36db046c; */
   display: block;
   position: relative;
-  margin: 2px 4px;
-  height: 8px;
-  width:70px;
-  top: 24px;
-  right: 30px;
+  margin: 2px 12px;
+  height: 30px;
+  width:80px;
+  right: 24px;
+  /* top:-20px; */
 }
 
 .dropdown-content{
-  /* background:#41c8ee; */
+  /* background:#6c18db; */
   color: #fafafa00;
   display: block;
   position: relative;
   overflow: hidden;
-  margin: 0 4px;
-  bottom: 20px;
-  height:4px; 
+  margin: 0 10px;
+  height: 1px; 
+  width: 70px;
+  right: 10px;
+  top: 12px;
   border: 1px solid #fafafa00;
-  transition: .1s ease all;
+  transition: .2s ease all;
   } 
   .fp2 {
     top: 8px;
   }
 
 .dropdown:hover .dropdown-content{
-  transition: .1s ease all;
+  transition: .2s ease all;
   background: #EEF2F3;
   position: relative;
   color: #0000006e;
   border: 1px solid #0000002c;
   border-top: 1px solid #fafafa00;
-  padding: 28px;
-  bottom: 9px;
+  /* top: 12px; */
   z-index: 3000;
 }
 
 
 .dropdown:hover .one{
   height: 400px;
+  padding: 28px;
   width: 300px;
-  right: 130px;
+  right: 50px;
 }
 .dropdown:hover .two{
   height: 460px;
   width: 300px;
-  right: 190px;
+  padding: 28px;
+  right: 140px;
 }
+.dropdown:hover .three{
+  /* transition: .4s ease all; */
+  height: 280px;
+  width: 120px;
+  padding: 12px;
+  right: 50px;
+}
+.contact-link{
+  background: #21659c62;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding: 4px;
+  height: 60px;
+  bottom: -20px;
+  left: -12px;
+  width: 145px;
+  justify-content: center;
+  align-items: center;
+  transition: .3s ease all;
+}
+.contact-link:hover{
+  transition: .3s ease all;
+  text-decoration: none;
+}
+
+.ghub:hover{
+  transition: .3s ease all;
+  background: #45b2d3;
+}
+.linked:hover{
+  background: #317d94;
+}
+.gemail:hover{
+  background: #1c5263;
+}
+.phone:hover{
+  background: #14394b;
+  color: #fafafaad;
+}
+
 /* MAIN THANGS */
 
 .main-row{
@@ -238,9 +304,8 @@ body{
   display: block;
   text-align: left;
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   overflow: scroll;
-  min-width: 450px;
   height: 110%;
 }
 
@@ -248,29 +313,30 @@ body{
   /* background: lightgreen; */
   display: block;
   position: relative;
-  width: 75%;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 650px;
   padding: 60px 20px;
-  
-  text-align: left;
   border: 1px solid #fafafa00;
   border-top: 0px;
   transition: .2s ease all;
 }
 .about:hover{
   transition: .2s ease all;
-  background: #07386100; 
+  background: #86dce01c; 
   border: 1px solid #0000002d;
   border-top: 0px;
 }
 .about h1{
-  background: #659aa923;
+  background: #659aa90e;
   color: #00000021;
+  display: block;
   position: relative;
   margin: 0 auto;           
-  margin-bottom: 90px;
-  padding: 8px;
-  width: 85%;
-  min-width: 325px;
+  margin-bottom: 70px;
+  padding: 6px;
+  width: 82%;
+  min-width: 315px;
   font-weight: 800;
   font-size: 8rem;
   word-wrap: break-word;
@@ -280,15 +346,22 @@ body{
 
 .about:hover h1{
   transition: .2s ease all;
+  letter-spacing: -3px;
   background: #659AA9;
   color: black;
+}
+.about:hover .thrilled{
+  transition: .4s ease all;
+  background: #d6568100;
+  color: #e95676;
+  height: .8px;
+  text-shadow: -6px 8px 5px #34475259;
 }
 
 .about p{
   display: block;
   position: relative;
   margin: 0 auto;
-  /* margin-top: 50px; */
   color:#000000bd;
   border-radius: 2px;
   font-weight: 100;
@@ -311,14 +384,6 @@ body{
   text-shadow: -2px 2px 1px #00000000;
   box-shadow: -2px 2px 1px #00000000;
   transition: .3s ease all;
-}
-.thrilled:hover{
-  transition: .3s ease all;
-  background: #d6568100;
-  border-radius: 4px;
-  color: #659AA9;
-  letter-spacing: -.5px;
-  text-shadow: -6px 8px 5px #0000006b;
 }
 
 .contact{
